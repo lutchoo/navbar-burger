@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'generalSans';
+    src: url('font/GeneralSans-Variable.ttf') format('truetype'); /* ou 'woff' selon le type de fichier */
+}
+
+.custom-font {
+    font-family: 'generalSans', sans-serif; /* Utilisez le nom défini dans font-family */
+}
+
+
+header{
+    font-family: "generalsans";
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 4px solid #4D03A6;
+    background-color: #0a090d;
+}
+
+#logo img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding-left: 50px;
+}
+
+nav{
+    display: flex;
+    float: right;
+    padding: 15px;
+    width: 50%;
+}
+nav ul{
+    width: 100%;
+}
+nav ul li {
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    width: 30%;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #e2e1e5;
+    letter-spacing: .0075rem;
+    text-transform: capitalize;
+    border-radius: 12px;
+    padding: 8px 12px;
+    font-size: .875rem;
+    font-weight: 500;
+    
+}
+
+#icon-menu{
+    height: 40px;
+    width: 40px;
+    visibility: hidden;
+}
+
+@media only screen and (max-width:650px){
+    header{
+        position: absolute;
+    }
+    #container-1 {
+        float: left;
+        width: 50%;
+    }
+    #container-2{
+        float: right;
+        width: 50%;
+        height: 100px;
+    }
+    #icon-menu{
+        visibility: visible;  
+    }
+    #icon-menu:hover{
+        visibility: visible;
+    }
+    nav ul, nav:active ul {
+        display:none;
+        position: absolute;
+        padding: 20px;
+        background: white;
+        right: 10px;
+        top: 35px;
+        width: 35%;
+       
+    }
+    nav:hover ul {
+        display: block;
+        border-radius: 20px;
+    }
+    nav li {
+        text-align: center;
+        width: 100% !important;
+        padding: 15px 0;
+        margin: 0;
+
+    }
+    nav ul li a{
+        background-color: #4D03A6;
+    }
+
+}
